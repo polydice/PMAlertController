@@ -219,6 +219,11 @@ import UIKit
             keyboardHasBeenShown = false
         }
     }
+
+  override open var preferredStatusBarStyle: UIStatusBarStyle {
+    return .lightContent
+  }
+
 }
 
 extension PMAlertController: UITextFieldDelegate {
